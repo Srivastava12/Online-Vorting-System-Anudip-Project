@@ -16,7 +16,7 @@ public class SendOTP {
 			
 		    // Constructing the URL string for sending the OTP via the Fast2SMS API
 		    String URL = "https://www.fast2sms.com/dev/bulkV2?authorization="
-		            + "L2Nq9c1R7yJtdfiCseZPnl768eCwCzxL11sgXQerolUmxDRu5jgI56SGRt1f"
+		            + "Add your api key"
 		            + "&route=otp&variables_values=" + OTP       // Adding the OTP to the API request
 		            + "&flash=0&numbers=" + number;             // Adding the recipient's mobile number to the request
 		    
