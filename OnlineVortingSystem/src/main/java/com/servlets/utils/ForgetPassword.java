@@ -24,15 +24,22 @@ public class ForgetPassword extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		// Retrieve the user's phone number from the HTTP request
 		String number = request.getParameter("number");
+
+		// Send an OTP (One-Time Password) to the provided phone number using the SendOTP class
 		String otp = new SendOTP().sendOTP(number);
-		
+
+		// Get the current HTTP session or create one if it doesn't exist
 		HttpSession session = request.getSession();
-		session.setAttribute("number", number);
-		session.setAttribute("otp", otp);
-		
+
+		// Store the phone number and generated OTP in the session attributes for future use
+		session.setAttribute("number", number);  // Store the phone number
+		session.setAttribute("otp", otp);        // Store the generated OTP
+
+		// Forward the request and response to the ForgetOTPVerification.jsp page for further processing
 		RequestDispatcher rd = request.getRequestDispatcher("ForgetOTPVerification.jsp");
-		rd.forward(request, response);
+		rd.forward(request, response);  // Forward the request and response objects to the JSP
 	}
 
 	/**
