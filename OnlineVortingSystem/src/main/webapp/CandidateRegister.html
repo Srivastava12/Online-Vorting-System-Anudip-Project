@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Boot.css">
+	<style>
+		.container {
+			width: 1150px;
+		}
+	</style>
+	<title>Register Candidate</title>
+	<style>
+		.login-container {
+			margin-top: 100px;
+			max-width: 100%;
+			padding: 15px;
+			background-color: #ffffff;
+			opacity: 10;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		body {
+			background-color: #cac6c6;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<div class="login-container">
+					<h2 class="text-center">
+						<b>Register as a Candidate</b>
+					</h2>
+					<form action="CandidateRegister" method="post" enctype="multipart/form-data">
+						<div class="row">
+							<div class="form-group col-md-6 ">
+								<input type="text" class="form-control" id="username" name="voterId"
+									placeholder="Enter Voter/Aadhar I'D num.." required>
+							</div>
+
+							<div class="form-group col-md-6">
+								<input type="text" class="form-control" id="username" name="name"
+									placeholder="Enter Name" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-md-6 ">
+								<input type="tel" class="form-control" id="username" name="moblieNo"
+									placeholder="Enter Mobile No" required>
+							</div>
+
+							<div class="form-group col-md-6">
+								<input type="email" class="form-control" id="username" name="email"
+									placeholder="Enter Email ID" required>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-md-6 ">
+								<label for="image">Upload Image</label>
+								<input type="file" id="image" name="image" accept="image/*" required>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-md-6 ">
+								<input type="password" class="form-control" id="username" name="password"
+									placeholder="Enter password" required>
+							</div>
+							<div class="form-group col-md-6">
+								<input type="password" class="form-control" id="username" name="cpassword"
+									placeholder="Confirm password" required>
+							</div>
+
+						</div>
+						<div class="row">
+							<div class="form-group col-md-12 ">
+								<label for="Gander">Gander :</label>
+								<input type="radio" id="male" name="gender" value="male">
+								<label for="male"> Male</label>
+								<input type="radio" id="female" name="gender" value="female">
+								<label for="female">Female</label>
+								<input type="radio" id="other" name="gender" value="other">
+								<label for="female"> Other</label>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary btn-block" name="btn"
+							value="Register">Register</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

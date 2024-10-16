@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Genaralize Online Vorting Syatem</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,600" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+	<link rel="stylesheet" href="./style.css">
+	<script>
+		/**
+		 * Redirects the user to the Voter Registration page.
+		 */
+		function redirectToPage1() {
+			// Change the current location to "VoterRegister.html"
+			window.location.href = "VoterRegister.html";
+		}
+
+		/**
+		 * Redirects the user to the Candidate Registration page.
+		 */
+		function redirectToPage2() {
+			// Change the current location to "CandidateRegister.html"
+			window.location.href = "CandidateRegister.html";
+		}
+		function redirectToPage3() {
+			// Change the current location to "CandidateRegister.html"
+			window.location.href = "VoterLoginPage.html";
+		}
+		function redirectToPage4() {
+			// Change the current location to "CandidateRegister.html"
+			window.location.href = "CandidateLoginPage.html";
+		}
+	</script>
+</head>
+
+<body>
+	<!-- partial:index.partial.html -->
+	<div class="container">
+		<section id="formHolder">
+
+			<div class="row">
+
+				<!-- Brand Box -->
+				<div class="col-sm-6 brand">
+					<a href="#" class="logo"><span></span></a>
+
+					<div class="heading">
+						<h2>Genaral Voting Portal</h2>
+						<p>Your Right Choice</p>
+					</div>
+
+					<div class="success-msg">
+						<p>Great! You are one of our members now</p>
+						<a href="#" class="profile">Your Profile</a>
+					</div>
+				</div>
+				<!-- Form Box -->
+				<div class="col-sm-6 form">
+
+					<!-- Login Form -->
+					<div class="login form-peice switched">
+						<form class="login-form" action="" method="get">
+							<div class="CTA">
+								<input type="button" onclick="redirectToPage3()" value="Login as a Voter" name='submit'>
+							</div>
+							<div class="CTA">
+								<input type="button" onclick="redirectToPage4()" value="Login as a Candidate"
+									name='submit'>
+							</div>
+							<div class="CTA">
+								<input type="button" onclick="redirectToPage5()" value="Login as a Admin" name='submit'>
+							</div>
+							<div class="CTA">
+								<a href="#" class="switch">I'm New</a>
+							</div>
+						</form>
+					</div><!-- End Login Form -->
+
+					<!-- Signup Form -->
+					<div class="signup form-peice">
+						<form action="" method="get">
+							<div class="CTA">
+								<input type="button" onclick="redirectToPage1()" value="Signup as a Voter"
+									name='submit'>
+							</div>
+							<div class="CTA">
+								<input type="button" onclick="redirectToPage2()" value="Signup as a Candidate"
+									name='submit'>
+							</div>
+							<div class="CTA">
+								<input type="button" onclick="redirectToPage()" value="Signup as a Admin" name='submit'>
+							</div>
+							<div class="CTA">
+								<a href="#" class="switch">I have an account</a>
+							</div>
+						</form>
+					</div><!-- End Signup Form -->
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+	<!-- partial -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+	<script src="./script.js"></script>
+</body>
+
+</html>

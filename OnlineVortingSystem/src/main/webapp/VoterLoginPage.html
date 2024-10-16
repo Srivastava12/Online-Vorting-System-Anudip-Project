@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Page</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+		body {
+			background-color: black;
+			font-family: Arial, sans-serif;
+		}
+
+		.login-container {
+			max-width: 400px;
+			margin: 80px auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+			border-radius: 8px;
+		}
+
+		.login-header {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		.login-header h2 {
+			margin-bottom: 10px;
+			color: #333;
+		}
+
+		.form-group label {
+			font-weight: bold;
+		}
+
+		.login-btn {
+			width: 100%;
+			padding: 10px;
+		}
+
+		.forgot-link {
+			text-align: right;
+			display: block;
+			margin-top: 10px;
+		}
+
+		.forgot-link a {
+			color: #007bff;
+			text-decoration: none;
+		}
+
+		.forgot-link a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="login-container">
+		<div class="login-header">
+			<h2>Login</h2>
+		</div>
+
+		<!-- Login Form -->
+		<form action="Login" method="post">
+			<div class="form-group">
+				<label for="userNumber">Phone Number</label>
+				<input type="text" class="form-control" name="mobNumber" placeholder="Enter your phone number" required>
+			</div>
+
+			<div class="form-group">
+				<label for="userPassword">Password</label>
+				<input type="password" class="form-control" name="password" placeholder="Enter your password" required>
+			</div>
+
+			<button type="submit" class="btn btn-primary login-btn">Login</button>
+
+			<div class="forgot-link">
+				<a href="ForgetPassword.html">Forgot Password?</a>
+			</div>
+		</form>
+	</div>
+
+	<!-- Bootstrap JS and dependencies -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
